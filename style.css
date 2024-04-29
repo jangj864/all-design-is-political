@@ -1,0 +1,286 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-color: #000000; 
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}
+
+#Title {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+            #Title h1 {
+                font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
+                text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
+                font-weight: 400;
+                text-align: left; /* 왼쪽 정렬로 변경 */
+                font-size: 8vw;
+                line-height: 7vw;
+                margin-bottom: -4%;
+                max-width: 100%;
+                margin-top: 30px;
+            }
+
+
+            #Title h2{
+                font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
+                text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
+                font-size: 3.5vw;
+                font-weight: 100;
+                text-align: left;
+                margin-bottom: 10%;
+                color: #777;
+                max-width: 100%;
+            }
+
+            .title-sub {
+                font-size: 4vw;
+                color: #888;
+            }
+            
+
+
+/* Gallery wrapper and container styles */
+.gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* 상대 위치 설정으로 indicators의 기준점 제공 */
+    min-height: 200px; /* 박스의 최소 높이를 설정 */
+    /* 나머지 스타일은 그대로 유지 */
+    padding: 20px;
+  }
+  
+  /* ... 기존 코드 생략 ... */
+
+.galleries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* 상대 위치 설정으로 indicators의 기준점 제공 */
+    min-height: 200px; /* 박스의 최소 높이를 설정 */
+    /* 나머지 스타일은 그대로 유지 */
+}
+
+.galleries h2 {
+    font-size: 3vw;
+}
+
+.gallery {
+    width: 50%;
+    height: 100%;
+    margin: 0 10px;
+    border: 2px solid #fff; /* 갤러리 테두리 추가 */
+    padding: 20px; /* 내부 여백 추가 */
+    box-sizing: border-box; /* border와 padding을 width에 포함 */
+    position: relative;
+    border-radius: 15px; /* 둥근 테두리 */
+}
+
+
+.gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.artworks {
+    text-align: center;
+    display: block; /* display: none 설정을 해제합니다. */
+    margin-bottom: auto;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 20px; /* Adjust as needed to position indicators from the bottom */
+    left: 0;
+    right: 0;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: red; /* 활성화된 인디케이터의 색상을 변경합니다. */
+    margin: 0 5px;
+}
+
+
+/* ... 기존 코드 생략 ... */
+
+  
+  /* Adjust description title size */
+  .description h2 {
+    font-size: 2vw; /* Adjust to your preferred size */
+    margin-bottom: 10%;
+  }
+
+  .description p {
+    font-size: 2vw; /* Adjust to your preferred size */
+    margin-bottom: 10%;
+  }
+
+  .artwork-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image if it's not as wide as the container */
+  }
+  
+  
+.title-bar h1 {
+    padding: 12px;
+    font-size: 2.1vw;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 11%;
+    background-color: rgb(0, 0, 0)fff; /* 배경색 */
+    display: flex;
+    border-radius: 15px; /* 둥근 테두리 */
+    border: 2px solid #fff; /* 테두리 색상 */
+    justify-content: space-between; /* 내부 내용을 균등하게 분배 */
+    text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
+    }
+
+/* Triangular Navigation Buttons */
+.nav-button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1em; /* Adjust size as needed */
+    width: 5px; /* Width of the button */
+    height: 5px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contentArea {
+    padding: 20px;
+}
+
+                #contentArea h1 {
+                    padding: 12px;
+                    font-size: 2.1vw;
+                    font-weight: 500;
+                    text-align: center;
+                    color: #ffffff;
+                    margin-top: 11%;
+                    background-color: rgb(0, 0, 0)fff; /* 배경색 */
+                    display: flex;
+                    border-radius: 15px; /* 둥근 테두리 */
+                    border: 2px solid #fff; /* 테두리 색상 */
+                    justify-content: space-between; /* 내부 내용을 균등하게 분배 */
+                    text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
+                }
+
+            #contentArea h2 {
+                font-size: 2vw;
+                font-weight: 100;
+                text-align: left;
+                margin-bottom: 0%;
+                margin-left: 3%;
+                margin-right: 3%;
+            }
+
+            
+            #contentArea h6 {
+                font-size: 2vw;
+                font-weight: 100;
+                text-align: center;
+
+                margin-top: 5%;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+footer {
+    font-size: 1vw;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(120, 120, 120, 0.744);
+    margin-top: 20%;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+
+    .box, #climateData {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        display: grid;
+        align-items: stretch; /* 컨테이너 내 아이템의 높이를 동일하게 늘림 */
+        justify-content: space-between; /* 내용을 좌우로 나누어 배치 */
+        padding: 10px;
+    }
+
+    .data-row {
+        font-size: 4vw;
+    }
+
+    .header .title {
+        font-size: 4vw;
+    }
+
+    #descriptionText {
+        text-align: center;
+        padding: 10px 0; /* 텍스트 위아래의 패딩을 추가하여 간격을 조정 */
+        font-size: 4vw;
+        /* ... */
+    }
+
+    .title-bar h1 {
+        font-size: 5vw;
+    }
+
+
+    #contentArea h1 {
+        font-size: 5vw;
+    }
+
+    #contentArea h2 {
+        font-size: 4vw;
+    }
+
+    #contentArea h6 {
+        font-size: 3vw;
+        margin-top: 40px;
+    }
+
+  }
+  
+/* Tablet styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+  
