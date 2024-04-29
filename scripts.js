@@ -119,7 +119,7 @@ function renderArtworks(ideology) {
       <p>Artist: ${artwork.artist}</p>
       <p>Country of Origin: ${artwork.country}</p>
       <p>Ideology: ${artwork.ideology}</p>
-      <p>${artwork.description}</p>
+      <h3>${artwork.description}</h3>
     </div>
   `;
     galleryElement.appendChild(artworkElement);

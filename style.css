@@ -25,8 +25,8 @@ body, html {
                 text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
                 font-weight: 400;
                 text-align: left; /* 왼쪽 정렬로 변경 */
-                font-size: 8vw;
-                line-height: 7vw;
+                font-size: 12vw;
+                line-height: 10vw;
                 margin-bottom: -4%;
                 max-width: 100%;
                 margin-top: 30px;
@@ -38,14 +38,16 @@ body, html {
                 text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
                 font-size: 3.5vw;
                 font-weight: 100;
-                text-align: left;
-                margin-bottom: 10%;
+                text-align: right;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                margin-right: 1%;
                 color: #777;
                 max-width: 100%;
             }
 
             .title-sub {
-                font-size: 4vw;
+                font-size: 3vw;
                 color: #888;
             }
             
@@ -68,25 +70,26 @@ body, html {
 .galleries {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     position: relative; /* 상대 위치 설정으로 indicators의 기준점 제공 */
     min-height: 200px; /* 박스의 최소 높이를 설정 */
-    /* 나머지 스타일은 그대로 유지 */
-}
-
-.galleries h2 {
-    font-size: 3vw;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 .gallery {
-    width: 50%;
-    height: 100%;
-    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 내부 내용을 균등하게 분배 */
+    flex: 1 1 50%; /* flex-grow, flex-shrink, and flex-basis 설정 */
+    padding: 20px;
     border: 2px solid #fff; /* 갤러리 테두리 추가 */
     padding: 20px; /* 내부 여백 추가 */
     box-sizing: border-box; /* border와 padding을 width에 포함 */
     position: relative;
-    border-radius: 15px; /* 둥근 테두리 */
+    border-radius: 15px; 
+    margin-right: 10px; /* 박스 사이의 여백 */
+    margin-left: 10px; 
 }
 
 
@@ -131,25 +134,36 @@ body, html {
 
 /* ... 기존 코드 생략 ... */
 
+.galleries h2 {
+    font-size: 1.5vw;
+    margin-bottom: 0%;
+    margin-top: 0;
+}
   
   /* Adjust description title size */
   .description h2 {
-    font-size: 2vw; /* Adjust to your preferred size */
-    margin-bottom: 10%;
+    font-size: 1vw; /* Adjust to your preferred size */
+    margin-bottom: 5%;
   }
 
   .description p {
-    font-size: 2vw; /* Adjust to your preferred size */
-    margin-bottom: 10%;
+    font-size: 1vw; /* Adjust to your preferred size */
+    text-align: left;
   }
 
   .artwork-image {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: block;
     margin: 0 auto; /* Centers the image if it's not as wide as the container */
   }
   
+  .description h3 {
+    font-size: 1vw; /* Adjust to your preferred size */
+    margin-top: 6%;
+    margin-bottom: 10%;
+    font-weight: 500;
+  }
   
 .title-bar h1 {
     padding: 12px;
@@ -232,7 +246,24 @@ footer {
 /* Mobile styles */
 @media screen and (max-width: 768px) {
 
-    .box, #climateData {
+
+    .galleries h2 {
+        font-size: 3vw;
+    }
+
+    .description h2 {
+        font-size: 2vw; /* Adjust to your preferred size */
+      }
+
+      .description p {
+        font-size: 2vw; /* Adjust to your preferred size */
+      }
+    
+      .artwork-image {
+        max-width: 100%;
+      }
+
+    .box{
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -242,14 +273,6 @@ footer {
         align-items: stretch; /* 컨테이너 내 아이템의 높이를 동일하게 늘림 */
         justify-content: space-between; /* 내용을 좌우로 나누어 배치 */
         padding: 10px;
-    }
-
-    .data-row {
-        font-size: 4vw;
-    }
-
-    .header .title {
-        font-size: 4vw;
     }
 
     #descriptionText {
