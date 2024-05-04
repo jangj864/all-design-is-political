@@ -332,6 +332,23 @@ footer {
     }
 
 
+
+    #Title h2 span {
+        font-size: 3vw; /* Ensures uniform font size across spans */
+    }
+    #Title h4{
+        font-size: 2vw; /* Ensures uniform font size across spans */
+    }
+    #subtitle h1 {
+        font-size: 4vw;
+    }
+    #maincontent h1 {
+        font-size: 4vw;
+    }
+    #maincontent h2 {
+        font-size: 3.5vw;
+    }
+
   }
   
 /* Tablet styles */
