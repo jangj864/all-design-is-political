@@ -1,309 +1,240 @@
 body, html {
-    height: 100%;
     margin: 0;
-    font-family: Helvetica, sans-serif;
-    color: white;
-    background-color: #000000; 
-    text-align: center;
-    font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
     max-width: 100%;
+
+    font-family: Helvetica, Arial, sans-serif;
     text-align: center;
-    margin: auto;
+
+    color: rgb(0, 0, 0);
+    background-color: #FEFCF6;
 }
 
-.hide {
-    display: none;
+/* Title */
+
+#Title h1 {
+    font-size: 7.5vw;
+    font-weight: 400;
+
+    text-align: center;
+    line-height: 8vw;
+    word-spacing: 0px;
+    letter-spacing: -2px;
+
+    max-width: 100%;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    text-transform: uppercase;
 }
 
-#Title {
-    margin-left: 20px;
+#Title h2 {
+    display: flex;           /* Enables Flexbox */
+    justify-content: space-between; /* Distributes space between and around content items */
+    padding: 0 20px;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.2em;      /* Adjusted for better alignment */
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    text-transform: uppercase;
+}
+
+        #Title h2 span {
+            font-size: 1.5vw; /* Ensures uniform font size across spans */
+        }
+
+
+#Title h3 {
+    display: flex;           /* Enables Flexbox */
+    justify-content: space-between; /* Distributes space between and around content items */
+    padding: 0 20px;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.2em;      /* Adjusted for better alignment */
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+        #Title h3 span {
+            font-size: 1vw; /* Ensures uniform font size across spans */
+        }
+
+#Title h4 {
+    font-size: 1.5vw;
+    font-weight: 300;
+
+    line-height: 1.2em; 
+    word-spacing: 0px;
+    letter-spacing: 0px;
+
+    max-width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0 30px;
+}
+
+/* MAP */
+
+#subtitle h1 {
+    font-size: 2.3vw;
+    font-weight: 400;
+
+    text-align: left;
+    line-height: 3vw;
+    word-spacing: 0px;
+    letter-spacing: -1px;
+
+    max-width: 100%;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 20px;
+
+    text-transform: uppercase;
+}
+
+#subtitle h2 {
+    font-size: 2vw;
+    font-weight: 400;
+
+    text-align: right;
+    line-height: 3vw;
+    word-spacing: 0px;
+    letter-spacing: -1px;
+
+    max-width: 100%;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 20px;
+
+    text-transform: uppercase;
+}
+
+
+#Map {
+    display: flex;
+    flex-direction: row; /* Ensures the layout is horizontal */
+    align-items: stretch; /* Stretches the children to fill the height */
+    width: 100%;
+    margin-top: 0px;
+}
+
+/* 지도아래 */
+
+.map-container {
+    display: flex;
+    flex: 1; /* Assigns 50% of the space to the map container */
+}
+
+/* 지도 */
+
+.floor-map {
+    width: 100%; /* Makes the map take full space inside its container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resizable-map {
+    width: 100%; /* Ensures the image fills the container */
+    max-width: 50%;
+    height: auto;
+    max-height: 100%; 
+
+    padding: 3% 20% 3% 20%;
+
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.section-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px;
+    width: 100%;
     margin-right: 20px;
 }
 
-            #Title h1 {
-                font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
-                text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
-                font-weight: 400;
-                text-align: left; /* 왼쪽 정렬로 변경 */
-                font-size: 12vw;
-                line-height: 10vw;
-                margin-bottom: -4%;
-                max-width: 100%;
-                margin-top: 30px;
-            }
-
-
-            #Title h2{
-                font-family: Helvetica, Arial, sans-serif; /* 헬베티카 폰트 설정 */
-                text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
-                font-size: 3.5vw;
-                font-weight: 100;
-                text-align: right;
-                margin-top: 1%;
-                margin-bottom: 1%;
-                margin-right: 1%;
-                color: #777;
-                max-width: 100%;
-            }
-
-            .title-sub {
-                font-size: 3vw;
-                color: #888;
-            }
-            
-
-
-/* Gallery wrapper and container styles */
-.gallery-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* 상대 위치 설정으로 indicators의 기준점 제공 */
-    min-height: 200px; /* 박스의 최소 높이를 설정 */
-    /* 나머지 스타일은 그대로 유지 */
-    padding: 20px;
-  }
-  
-  /* ... 기존 코드 생략 ... */
-
-.galleries {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    position: relative; /* 상대 위치 설정으로 indicators의 기준점 제공 */
-    min-height: 200px; /* 박스의 최소 높이를 설정 */
-    margin-right: 20%;
-    margin-left: 20%;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* 내부 내용을 균등하게 분배 */
-    flex: 1 1 50%; /* flex-grow, flex-shrink, and flex-basis 설정 */
-    padding: 20px;
-    border: 2px solid #fff; /* 갤러리 테두리 추가 */
-    padding: 20px; /* 내부 여백 추가 */
-    box-sizing: border-box; /* border와 padding을 width에 포함 */
-    position: relative;
-    border-radius: 15px; 
-    margin-right: 10px; /* 박스 사이의 여백 */
-    margin-left: 10px; 
-}
-
-
-.gallery-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-
-.artworks {
-    text-align: center;
-    display: block; /* display: none 설정을 해제합니다. */
-    margin-bottom: auto;
-}
-
-.indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    position: absolute;
-    bottom: 20px; /* Adjust as needed to position indicators from the bottom */
-    left: 0;
-    right: 0;
-}
-
-.indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: grey;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.indicator.active {
-    background-color: red; /* 활성화된 인디케이터의 색상을 변경합니다. */
-    margin: 0 5px;
-}
-
-
-/* ... 기존 코드 생략 ... */
-
-.galleries h2 {
-    font-size: 1.5vw;
-    margin-bottom: 0%;
-    margin-top: 0;
-}
-  
-  /* Adjust description title size */
-  .description h2 {
-    font-size: 1vw; /* Adjust to your preferred size */
-    margin-bottom: 5%;
-  }
-
-  .description p {
-    font-size: 1vw; /* Adjust to your preferred size */
-    text-align: left;
-  }
-
-  .artwork-image {
-    max-width: 50%;
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Centers the image if it's not as wide as the container */
-  }
-  
-  .description h3 {
-    font-size: 1vw; /* Adjust to your preferred size */
-    margin-top: 6%;
-    margin-bottom: 10%;
+.btn {
+    font-size: 2vw;
     font-weight: 500;
-  }
-  
-.title-bar h1 {
-    padding: 12px;
-    font-size: 2.1vw;
-    font-weight: 500;
-    text-align: center;
-    color: #ffffff;
-    margin-top: 11%;
-    background-color: rgb(0, 0, 0)fff; /* 배경색 */
-    display: flex;
-    border-radius: 15px; /* 둥근 테두리 */
-    border: 2px solid #fff; /* 테두리 색상 */
-    justify-content: space-between; /* 내부 내용을 균등하게 분배 */
-    text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
-    }
-
-/* Triangular Navigation Buttons */
-.nav-button {
-    cursor: pointer;
+    width: 100%;
+    background-color: #888; /* Default background color */
+    color: #000000; /* Text color */
     border: none;
-    background-color: transparent;
-    color: white;
-    font-size: 1em; /* Adjust size as needed */
-    width: 5px; /* Width of the button */
-    height: 5px; /* Height of the button */
-    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.btn a {
+    color: inherit; /* Ensures link color is the same as the button */
+    text-decoration: none; /* Removes underline */
+    display: block; /* Makes the link fill the button */
+    line-height: inherit; /* Aligns the line height with the button's text */
     align-items: center;
-    justify-content: center;
 }
 
-#contentArea {
-    padding: 20px;
+    .architecture { background-color: #CDA5E5; }
+    .graphic { background-color: #9EE6A6; }
+    .commercial { background-color: #F69AB1; }
+    .fashion { background-color: #94F2E4; }
+    .film { background-color: #F9BC45; }
+    .organizations { background-color: #F2F294; }
+
+    .architecture:hover { background-color: #493952; }
+    .graphic:hover { background-color: #3d5a40; }
+    .commercial:hover { background-color: #6c424d; }
+    .fashion:hover { background-color: #365b55; }
+    .film:hover { background-color: #5f4718; }
+    .organizations:hover { background-color: #7b7b4a; }
+    
+/*선*/
+
+hr {
+    height: 0.5px;              /* Set the thickness of the hr */
+    background-color: #333;   /* 선의 색상 설정 */
 }
 
-                #contentArea h1 {
-                    padding: 12px;
-                    font-size: 2.1vw;
-                    font-weight: 500;
-                    text-align: center;
-                    color: #ffffff;
-                    margin-top: 11%;
-                    background-color: rgb(0, 0, 0)fff; /* 배경색 */
-                    display: flex;
-                    border-radius: 15px; /* 둥근 테두리 */
-                    border: 2px solid #fff; /* 테두리 색상 */
-                    justify-content: space-between; /* 내부 내용을 균등하게 분배 */
-                    text-transform: uppercase; /* 모든 텍스트를 대문자로 변환 */
-                }
-
-            #contentArea h2 {
-                font-size: 2vw;
-                font-weight: 100;
-                text-align: left;
-                margin-bottom: 0%;
-                margin-left: 3%;
-                margin-right: 3%;
-            }
-
-            
-            #contentArea h6 {
-                font-size: 2vw;
-                font-weight: 100;
-                text-align: center;
-
-                margin-top: 5%;
-                margin-left: 10%;
-                margin-right: 10%;
-            }
-
-footer {
-    font-size: 1vw;
-    font-weight: 100;
-    text-align: center;
-    color: rgba(120, 120, 120, 0.744);
-    margin-top: 20%;
-    margin-bottom: 10%;
-    padding-bottom: 10%;
+.thin-hr {
+    border: none;             /* 기본 테두리 제거 */
+    height: 0.3px;              /* 선의 두께 설정 */
+    background-color: #333;   /* 선의 색상 설정 */
 }
 
-/* Mobile styles */
+
+/* Existing responsive styles */
 @media screen and (max-width: 768px) {
-
-
-    .galleries h2 {
-        font-size: 3vw;
+    .map-container {
+        flex-direction: column;
     }
 
-    .description h2 {
-        font-size: 2vw; /* Adjust to your preferred size */
-      }
-
-      .description p {
-        font-size: 2vw; /* Adjust to your preferred size */
-      }
-    
-      .artwork-image {
-        max-width: 100%;
-      }
-
-    .box{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .container {
-        display: grid;
-        align-items: stretch; /* 컨테이너 내 아이템의 높이를 동일하게 늘림 */
-        justify-content: space-between; /* 내용을 좌우로 나누어 배치 */
-        padding: 10px;
+    .section-buttons {
+        grid-template-columns: repeat(1, 1fr); 
+        margin-top: 5%;
+        margin-left: 5%;
     }
 
-    #descriptionText {
-        text-align: center;
-        padding: 10px 0; /* 텍스트 위아래의 패딩을 추가하여 간격을 조정 */
-        font-size: 4vw;
-        /* ... */
+    .btn {
+        margin-top: 3px;
+        width: 90%;
+        height: 40px;
+        font-size: 2.3vw;
     }
 
-    .title-bar h1 {
-        font-size: 5vw;
-    }
-
-
-    #contentArea h1 {
-        font-size: 5vw;
-    }
-
-    #contentArea h2 {
-        font-size: 4vw;
-    }
-
-    #contentArea h6 {
-        font-size: 3vw;
-        margin-top: 40px;
-    }
-
-  }
-  
-/* Tablet styles */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
 
 }
-  
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Tablet styles */
+}
