@@ -1,95 +1,78 @@
 // The artworks data array
 const artworksData = [
     {
-      title: "Communist propaganda poster by Vladimir Mayakovsky",
-      image: "image/Communist propaganda poster by Vladimir Mayakovsky.jpg",
-      year: "1942",
-      artist: "Vladimir Mayakovsky",
+      title: "Vkhutemas",
+      image: "image/1.png",
+      year: "1920-1930",
+      artist: "Unknown",
       country: "Soviet Union",
       ideology: "Communism",
-      description: "A striking poster advocating Communist ideals, using bold imagery and slogans to rally support for the Soviet cause during World War II."
+      description: "Vkhutemas was a school of design in Moscow, and a center for three major Avant-Garde movements (constructivism, rationalism, & suprematism)."
     },
     {
-      title: "We Can Do It!",
-      image: "image/We Can Do It!.jpg",
-      year: "1943",
-      artist: "J. Howard Miller",
+      title: "Russian Avant-Garde",
+      image: "image/2.jpg",
+      year: "1917-1932",
+      artist: "El Lissitzky (Lazar Lisitsky)",
+      country: "Soviet Union",
+      ideology: "Communism",
+      description: "A work by a famous soviet Avant-Garde artist, the text translating to 'Beat the Whites with the Red Wedge.'"
+    },
+    {
+      title: "Rabotnitsa",
+      image: "image/3.jpg",
+      year: "1914",
+      artist: "Unknown",
+      country: "Soviet Union",
+      ideology: "Communism",
+      description: "The cover of the 1923 inaugural issue of Rabotnitsa, the first Soviet women’s magazine found in 1914."
+    },
+    {
+      title: "Socialist Realism",
+      image: "image/4.jpg",
+      year: "1934",
+      artist: "Isaak Brodsky",
+      country: "Soviet Union",
+      ideology: "Communism",
+      description: "This artwork represents the Socialist Realism movement of visual arts and literature, that aimed to idealise life under Soviet socialism."
+    },
+    {
+      title: "The Museum of Modern Art (MoMA)",
+      image: "image/5.png",
+      year: "1929-",
+      artist: "Photo by Soichi Sunami",
       country: "United States",
       ideology: "Capitalism",
-      description: "An iconic poster encouraging American women to join the workforce during World War II, symbolizing courage and effort, and becoming a symbol of American wartime determination."
+      description: "While we typically know the MoMA as a major art museum, mid-20th century the institution played an incredibly important role is establishing our understanding of design today."
     },
     {
-      title: "Keep Calm and Carry On",
-      image: "image/Keep Calm and Carry On.jpg",
-      year: "1939",
-      artist: "Unknown",
-      country: "United Kingdom",
-      ideology: "Capitalism",
-      description: "Originally a British poster produced during World War II, it conveyed a message of resilience and determination in the face of adversity, later becoming a global symbol of staying composed during challenging times."
-    },
-    {
-      title: "Uncle Sam Wants You",
-      image: "image/Uncle Sam Wants You.jpg",
-      year: "1917",
-      artist: "James Montgomery Flagg",
+      title: "Pop Art",
+      image: "image/6.jpg",
+      year: "1964",
+      artist: "Andy Warhol",
       country: "United States",
       ideology: "Capitalism",
-      description: "An iconic American recruitment poster from World War I, featuring Uncle Sam pointing directly at the viewer with the caption 'I Want You for U.S. Army,' urging citizens to enlist in the military."
+      description: "This image of Marilyn Monroe is one of the most iconic pieces to come out of the Pop Art movement, that is arguably the quintessential capitalist art & design style.."
     },
     {
-      title: "Rosie the Riveter",
-      image: "image/Rosie the Riveter.jpg",
-      year: "1943",
-      artist: "Norman Rockwell",
+      title: "Mid-Century Modern",
+      image: "image/7.png",
+      year: "1956",
+      artist: "Charles and Ray Eames",
       country: "United States",
       ideology: "Capitalism",
-      description: "A poster depicting a strong female factory worker, symbolizing the contribution of American women to the war effort during World War II, and representing a shift in gender roles towards more active participation in the workforce."
+      description: "This is the famous Eames Lounge Chair and Ottoman, an iconic representation of the Mid-Century Modern design movement."
     },
     {
-      title: "Buy War Bonds",
-      image: "image/Buy War Bonds.jpg",
-      year: "1942",
-      artist: "Unknown",
+      title: "Art Deco",
+      image: "image/8.jpg",
+      year: "1926",
+      artist: "Eduardo Garcia Benito",
       country: "United States",
       ideology: "Capitalism",
-      description: "A poster encouraging Americans to support the war effort by purchasing war bonds, a means of raising funds for military operations during World War II."
+      description: "This is a Vogue magazine cover made in the design style of Art Deco- which became synonymous with the opulence and glamour of pre-Great Depression America."
     },
-    {
-      title: "Workers of the World, Unite!",
-      image: "image/Workers of the World, Unite!.jpg",
-      year: "1920s",
-      artist: "Unknown",
-      country: "Soviet Union",
-      ideology: "Communism",
-      description: "A Soviet propaganda poster promoting the unity of workers across the world under the banner of Communism, reflecting the internationalist ideals of the Soviet Union."
-    },
-    {
-      title: "Stalin’s 5-Year Plan",
-      image: "image/Stalin’s 5-Year Plan.png",
-      year: "1930s",
-      artist: "Unknown",
-      country: "Soviet Union",
-      ideology: "Communism",
-      description: "A poster likely promoting one of Stalin's ambitious five-year economic plans aimed at industrializing and modernizing the Soviet Union."
-    },
-    {
-      title: "Proletarians of all Countries, Unite!",
-      image: "image/Proletarians of all Countries, Unite!.jpg",
-      year: "1936",
-      artist: "Unknown",
-      country: "Soviet Union",
-      ideology: "Communism",
-      description: "Another Soviet propaganda poster advocating for the unity of the proletariat worldwide under the banner of Communism, reflecting the internationalist stance of the Soviet government."
-    },
-    {
-      title: "The Motherland Calls",
-      image: "image/The Motherland Calls.jpg",
-      year: "1941",
-      artist: "Irakli Toidze",
-      country: "Soviet Union",
-      ideology: "Communism",
-      description: "A monumental Soviet propaganda poster featuring a female figure representing the Motherland calling on her citizens to defend the Soviet Union during World War II, symbolizing patriotism and sacrifice."
-    }
+
   ];
   
   let currentIndex = 0;
@@ -154,4 +137,21 @@ function navigate(ideology, change) {
 document.addEventListener('DOMContentLoaded', function() {
   renderArtworks('Communism');
   renderArtworks('Capitalism');
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var detailsButtons = document.querySelectorAll('.detailsButton'); // Select all detail buttons
+  detailsButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+          var content = this.closest('.subtitle').querySelector('.detailsContent'); // Find the closest .detailsContent to the button
+          if (content.style.maxHeight) {
+              content.style.maxHeight = null; // Collapse the section
+              content.classList.remove('expanded');
+          } else {
+              content.style.maxHeight = content.scrollHeight + "px"; // Expand the section
+              content.classList.add('expanded');
+          }
+      });
+  });
 });

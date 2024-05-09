@@ -1,356 +1,583 @@
-body, html {
-    margin: 0;
-    max-width: 100%;
+                    body, html {
+                        margin: 0;
+                        max-width: 100%;
 
-    font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
+                        font-family: Helvetica, Arial, sans-serif;
+                        text-align: center;
 
-    color: rgb(0, 0, 0);
-    background-color: #FEFCF6;
-}
+                        color: rgb(0, 0, 0);
+                        background-color: #FEFCF6;
+                    }
 
-.hide {
-    display: none;
-}
+                    .hide {
+                        display: none;
+                    }
 
-#Title h1 {
-    font-size: 7.5vw;
-    font-weight: 400;
+                    #Title h1 {
+                        font-size: 7.5vw;
+                        font-weight: 400;
 
-    text-align: center;
-    line-height: 8vw;
-    word-spacing: 0px;
-    letter-spacing: -2px;
+                        text-align: center;
+                        line-height: 8vw;
+                        word-spacing: 0px;
+                        letter-spacing: -1px;
 
-    max-width: 100%;
+                        max-width: 100%;
 
-    margin-top: 0;
-    margin-bottom: 0;
+                        margin-top: 0;
+                        margin-bottom: 0;
 
-    text-transform: uppercase;
-}
+                        text-transform: uppercase;
+                    }
 
-#Title h2 {
-    display: flex;           /* Enables Flexbox */
-    justify-content: space-between; /* Distributes space between and around content items */
+
+            .title-and-buttons {
+                display: flex;
+                align-items: flex-start;
+                align-items: center;
+                width: 100%;
+            }
+
+            .buttons-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            
+            .btn {
+                text-align: center;
+                padding: 8px 15px;
+
+                font-size: 1.5vw;
+                font-weight: 500;
+                width: 100%;
+
+                background-color: #FEFCF6;
+                color: #000000;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                border-radius: 30px;
+                border: 1px solid rgb(0, 0, 0);
+
+                margin-bottom: 5px;
+                margin-right: 5px;
+            }
+            
+            .btn a {
+                color: inherit;
+                text-decoration: none;
+                display: block;
+                line-height: inherit;
+                align-items: center;
+            }
+
+            .btn:hover {
+                background-color: #e0e0e0;
+            }
+            
+
+                    #Title h2 {
+                        display: flex;           /* Enables Flexbox */
+                        justify-content: space-between; /* Distributes space between and around content items */
+                        padding: 0 20px;
+                        font-size: 1vw;
+                        font-weight: 400;
+                        line-height: 1.2em;      /* Adjusted for better alignment */
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+                        max-width: 100%;
+                        margin-top: 10px;
+                        margin-bottom: 0%;
+                        text-transform: uppercase;
+                    }
+
+                            #Title h2 span {
+                                font-size: 1.5vw; /* Ensures uniform font size across spans */
+                            }
+
+                            #Title h2 a {
+                                color: inherit; /* Ensures link color is the same as the button */
+                                text-decoration: none; /* Removes underline */
+                                display: block; /* Makes the link fill the button */
+                            }
+
+                            #Title h2 .up-sub-1:hover { color:rgb(255, 0, 0); }
+                            #Title h2 .up-sub-2:hover { color:rgb(255, 0, 0); }
+                            #Title h2 .up-sub-3:hover { color:rgb(255, 0, 0); }
+
+                    
+#Title h3 {
+    display: flex;
+    justify-content: space-between;
     padding: 0 20px;
     font-size: 1vw;
     font-weight: 400;
-    line-height: 1.2em;      /* Adjusted for better alignment */
+    line-height: 1.2em;
     word-spacing: 0px;
     letter-spacing: 0px;
     max-width: 100%;
-    margin-top: 10px;
-    margin-bottom: 0%;
+    margin-top: 0;
+    margin-bottom: 0;
     text-transform: uppercase;
 }
 
-        #Title h2 span {
-            font-size: 1.5vw; /* Ensures uniform font size across spans */
+        #Title h3 span {
+            font-size: 1vw;
         }
 
-        #Title h2 a {
-            color: inherit; /* Ensures link color is the same as the button */
-            text-decoration: none; /* Removes underline */
-            display: block; /* Makes the link fill the button */
+
+                    #Title h4 {
+                        font-size: 1.5vw;
+                        font-weight: 300;
+
+                        line-height: 1.2em; 
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+
+                        max-width: 100%;
+                        margin-top: 1%;
+                        margin-bottom: 1%;
+                        padding: 0 30px;
+                    }
+
+                    /*선*/
+#categories h1 {
+            font-size: 2.3vw;
+            font-weight: 600;
+        
+            text-align: left;
+            line-height: 3vw;
+            word-spacing: 0px;
+            letter-spacing: 0px;
+        
+            max-width: 100%;
+        
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0 20px;
+        
+            text-transform: uppercase;
         }
 
-        #Title h2 .up-sub-1:hover { color:rgb(255, 0, 0); }
-        #Title h2 .up-sub-2:hover { color:rgb(255, 0, 0); }
-        #Title h2 .up-sub-3:hover { color:rgb(255, 0, 0); }
+        
+
+                    hr {
+                        height: 0.5px;              /* Set the thickness of the hr */
+                        background-color: #333;   /* 선의 색상 설정 */
+                    }
+
+                    .thin-hr {
+                        border: none;             /* 기본 테두리 제거 */
+                        height: 0.3px;              /* 선의 두께 설정 */
+                        background-color: #333;   /* 선의 색상 설정 */
+                    }
+                    .subtitle h1 {
+                        font-size: 2.3vw;
+                        font-weight: 400;
+                    
+                        text-align: left;
+                        line-height: 3vw;
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+                    
+                        max-width: 100%;
+                    
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        padding: 0 20px;
+                    
+                        text-transform: uppercase;
+                    }
+                    
+                            .subtitle h1 a {
+                                color: inherit;
+                                text-decoration: none;
+                                display: block; 
+                            }
+                    
+                            #p1:hover { color:rgb(255, 0, 0); }
+                            #p2:hover { color:rgb(0, 115, 255); }
+                            #p3:hover { color:rgb(255, 187, 0); }
+                    
+                    
+                            .subtitle-header {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: 100%;
+                            }
+                    
+                            .subtitle-buttons-container {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                padding-right: 20px;
+                            }
+                    
+                            .subtitle-btn {
+                                text-align: center;
+                                padding: 8px 15px;
+                                font-size: 1.2vw;
+                                font-weight: 500;
+                                background-color: #CCCCCC;
+                                color: #333333;
+                                border: 1px solid #666666;
+                                border-radius: 20px;
+                                margin-left: 10px;
+                                cursor: pointer;
+                                transition: background-color 0.3s;
+                            }
+                    
+                            .subtitle-btn:hover {
+                                background-color: #BBBBBB;
+                            }
+                    
+                    
+                    .subtitle h2 {
+                        font-size: 2vw;
+                        font-weight: 400;
+                    
+                        text-align: center;
+                        line-height: 2vw;
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+                    
+                        max-width: 100%;
+                    
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        padding: 0 20px;
+                    
+                        text-transform: uppercase;
+                    }
+                    
+                    .subtitle h4 {
+                        font-size: 1.5vw;
+                        font-weight: 300;
+                    
+                        line-height: 1.2em; 
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+                    
+                        max-width: 100%;
+                        margin-top: 1%;
+                        margin-bottom: 1%;
+                        padding: 0 30px;
+                    }
+                    
+                    .subtitle h5 {
+                        font-size: 2vw;
+                        font-weight: 400;
+                    
+                        text-align: right;
+                        line-height: 3vw;
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+                    
+                        max-width: 100%;
+                    
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        padding: 0 20px;
+                    
+                        text-transform: uppercase;
+                    }
+                    
+                    /* Content */
+                    
+                    .detailsContent {
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+                        opacity: 0; /* Start fully transparent */
+                    }
+                    
+                    .detailsContent.expanded {
+                        max-height: 500px; /* Adjust this value based on the content's actual height */
+                        opacity: 1; /* Fade in to fully opaque */
+                    }
+                    
+                    /* 이미지 */
+                    
+                    
+                    .image-text {
+                        flex: 1 1 50%;
+                        padding: 30px;
+                    }
+                    
+                    .image-text {
+                        padding: 30px;
+                        text-align: left;          
+                        font-size: 2vw;
+                        font-weight: 300;
+                    }
+
+                    #subtitle h1 {
+                        font-size: 2.3vw;
+                        font-weight: 400;
+                    
+                        text-align: left;
+                        line-height: 3vw;
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+                    
+                        max-width: 100%;
+                    
+                        margin-top: 1%;
+                        margin-bottom: 1%;
+                        padding: 0 20px;
+                    
+                        text-transform: uppercase;
+                    }
+
+                    #subtitle h2 {
+                        font-size: 2vw;
+                        font-weight: 100;
+                    
+                        text-align: center;
+                        line-height: 2vw;
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+                    
+                        max-width: 100%;
+                    
+                        margin-top: 3%;
+                        margin-bottom: 3%;
+                        padding: 0 20px;
+                    
+                    }
 
 
-#Title h4 {
-    font-size: 1.5vw;
-    font-weight: 300;
+                    #maincontent h1 {
+                        font-size: 2.3vw;
+                        font-weight: 400;
+                    
+                        text-align: left;
+                        line-height: 3vw;
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+                    
+                        max-width: 100%;
+                    
+                        line-height: 1.2em; 
+                        margin-top: 1%;
+                        margin-bottom: 1%;
+                        padding: 0 20px;
+                    
+                        text-transform: uppercase;
+                    }
+                    
 
-    line-height: 1.2em; 
-    word-spacing: 0px;
-    letter-spacing: 0px;
-
-    max-width: 100%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding: 0 30px;
-}
-
-/*선*/
-
-hr {
-    height: 0.5px;              /* Set the thickness of the hr */
-    background-color: #333;   /* 선의 색상 설정 */
-}
-
-.thin-hr {
-    border: none;             /* 기본 테두리 제거 */
-    height: 0.3px;              /* 선의 두께 설정 */
-    background-color: #333;   /* 선의 색상 설정 */
-}
-
-#subtitle h1 {
-    font-size: 2.3vw;
-    font-weight: 400;
-
-    text-align: left;
-    line-height: 3vw;
-    word-spacing: 0px;
-    letter-spacing: 0px;
-
-    max-width: 100%;
-
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding: 0 20px;
-
-    text-transform: uppercase;
-}
-
-#subtitle h2 {
-    font-size: 2vw;
-    font-weight: 100;
-
-    text-align: center;
-    line-height: 2vw;
-    word-spacing: 0px;
-    letter-spacing: 0px;
-
-    max-width: 100%;
-
-    margin-top: 3%;
-    margin-bottom: 3%;
-    padding: 0 20px;
-
-}
-
-#maincontent h1 {
-    font-size: 2.3vw;
-    font-weight: 400;
-
-    text-align: left;
-    line-height: 3vw;
-    word-spacing: 0px;
-    letter-spacing: 0px;
-
-    max-width: 100%;
-
-    line-height: 1.2em; 
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding: 0 20px;
-
-    text-transform: uppercase;
-}
-
-#maincontent h2 {
-    font-size: 2vw;
-    font-weight: 100;
-
-    text-align: left;
-    line-height: 2vw;
-    word-spacing: 0px;
-    letter-spacing: 0px;
-
-    max-width: 100%;
-
-    line-height: 1.2em; 
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding: 0 20px;
-
-}
+                    #maincontent h2 {
+                        font-size: 2vw;
+                        font-weight: 100;
+                    
+                        text-align: left;
+                        line-height: 2vw;
+                        word-spacing: 0px;
+                        letter-spacing: 0px;
+                    
+                        max-width: 100%;
+                    
+                        line-height: 1.2em; 
+                        margin-top: 1%;
+                        margin-bottom: 1%;
+                        padding: 0 20px;
+                    
+                    }
 
 
-/* ... 기존 코드 생략 ... */
+  /* ... 기존 코드 생략 ... */
 
 .galleries {
-display: flex;
-justify-content: space-between;
-align-items: stretch;
-position: relative; /* 상대 위치 설정으로 indicators의 기준점 제공 */
-min-height: 50%; /* 박스의 최소 높이를 설정 */
-min-width: 50%;
-margin-right: 20%;
-margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative; /* 상대 위치 설정으로 indicators의 기준점 제공 */
+    min-height: 50%; /* 박스의 최소 높이를 설정 */
+    min-width: 50%;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 .gallery {
-display: flex;
-flex-direction: column;
-justify-content: space-between; /* 내부 내용을 균등하게 분배 */
-flex: 1 1 60%; /* flex-grow, flex-shrink, and flex-basis 설정 */
-padding: 20px;
-border: 1px solid #000000; /* 갤러리 테두리 추가 */
-padding: 20px; /* 내부 여백 추가 */
-box-sizing: border-box; /* border와 padding을 width에 포함 */
-position: relative;
-border-radius: 15px; 
-margin-right: 10px; /* 박스 사이의 여백 */
-margin-left: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 내부 내용을 균등하게 분배 */
+    flex: 1 1 60%; /* flex-grow, flex-shrink, and flex-basis 설정 */
+    padding: 20px;
+    border: 1px solid #000000; /* 갤러리 테두리 추가 */
+    padding: 20px; /* 내부 여백 추가 */
+    box-sizing: border-box; /* border와 padding을 width에 포함 */
+    position: relative;
+    border-radius: 15px; 
+    margin-right: 10px; /* 박스 사이의 여백 */
+    margin-left: 10px; 
 }
 
 
 .gallery-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 
 .artworks {
-text-align: center;
-display: block; /* display: none 설정을 해제합니다. */
-margin-bottom: auto;
+    text-align: center;
+    display: block; /* display: none 설정을 해제합니다. */
+    margin-bottom: auto;
 }
 
 .indicators {
-display: flex;
-justify-content: center;
-margin-top: 30px;
-position: absolute;
-bottom: 20px; /* Adjust as needed to position indicators from the bottom */
-left: 0;
-right: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 20px; /* Adjust as needed to position indicators from the bottom */
+    left: 0;
+    right: 0;
 }
 
 .indicator {
-width: 10px;
-height: 10px;
-border-radius: 50%;
-background-color: grey;
-margin: 0 5px;
-cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 .indicator.active {
-background-color: red; /* 활성화된 인디케이터의 색상을 변경합니다. */
-margin: 0 5px;
+    background-color: red; /* 활성화된 인디케이터의 색상을 변경합니다. */
+    margin: 0 5px;
 }
 
 
 /* ... 기존 코드 생략 ... */
 
 .galleries h2 {
-font-size: 1.5vw;
-margin-bottom: 0%;
-margin-top: 0;
+    font-size: 1.5vw;
+    margin-bottom: 0%;
+    margin-top: 0;
 }
+  
+  /* Adjust description title size */
+  .description h2 {
+    font-size: 1vw; /* Adjust to your preferred size */
+    margin-bottom: 5%;
+  }
 
-/* Adjust description title size */
-.description h2 {
-font-size: 1vw; /* Adjust to your preferred size */
-margin-bottom: 5%;
-}
+  .description p {
+    font-size: 1vw; /* Adjust to your preferred size */
+    text-align: left;
+  }
 
-.description p {
-font-size: 1vw; /* Adjust to your preferred size */
-text-align: left;
-}
-
-.artwork-image {
-max-width: 50%;
-height: auto;
-display: block;
-margin: 0 auto; /* Centers the image if it's not as wide as the container */
-}
-
-.description h3 {
-font-size: 1vw; /* Adjust to your preferred size */
-margin-top: 6%;
-margin-bottom: 10%;
-font-weight: 500;
-}
+  .artwork-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image if it's not as wide as the container */
+  }
+  
+  .description h3 {
+    font-size: 1vw; /* Adjust to your preferred size */
+    margin-top: 6%;
+    margin-bottom: 10%;
+    font-weight: 500;
+  }
 
 /* Triangular Navigation Buttons */
 .nav-button {
-cursor: pointer;
-border: none;
-background-color: transparent;
-color: rgb(0, 0, 0);
-font-size: 1em; /* Adjust size as needed */
-width: 5px; /* Width of the button */
-height: 5px; /* Height of the button */
-display: flex;
-align-items: center;
-justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 1em; /* Adjust size as needed */
+    width: 5px; /* Width of the button */
+    height: 5px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 footer {
-font-size: 1vw;
-font-weight: 100;
-text-align: center;
-color: rgba(120, 120, 120, 0.744);
-margin-top: 5%;
-margin-bottom: 10%;
-padding-bottom: 10%;
+    font-size: 1vw;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(120, 120, 120, 0.744);
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
 }
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
 
-.galleries {
-min-width: 100%;
-margin-left: 0%;
-}
+    .galleries {
+        min-width: 100%;
+        margin-left: 0%;
+    }
+    
 
+    .galleries h2 {
+        font-size: 3vw;
+    }
 
-.galleries h2 {
-font-size: 3vw;
-}
+    .description h2 {
+        font-size: 2vw; /* Adjust to your preferred size */
+      }
 
-.description h2 {
-font-size: 2vw; /* Adjust to your preferred size */
-}
+      .description p {
+        font-size: 2vw; /* Adjust to your preferred size */
+      }
+    
+      .artwork-image {
+        max-width: 100%;
+      }
 
-.description p {
-font-size: 2vw; /* Adjust to your preferred size */
-}
+    .box{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        display: grid;
+        align-items: stretch; /* 컨테이너 내 아이템의 높이를 동일하게 늘림 */
+        justify-content: space-between; /* 내용을 좌우로 나누어 배치 */
+        padding: 10px;
+    }
 
-.artwork-image {
-max-width: 100%;
-}
+    #descriptionText {
+        text-align: center;
+        padding: 10px 0; /* 텍스트 위아래의 패딩을 추가하여 간격을 조정 */
+        font-size: 4vw;
+        /* ... */
+    }
 
-.box{
-margin-top: 10px;
-margin-bottom: 10px;
-}
+    #Title h2 span {
+        font-size: 3vw; /* Ensures uniform font size across spans */
+    }
+    #Title h4{
+        font-size: 2vw; /* Ensures uniform font size across spans */
+    }
+    #subtitle h1 {
+        font-size: 4vw;
+    }
+    #maincontent h1 {
+        font-size: 4vw;
+    }
+    #maincontent h2 {
+        font-size: 3.5vw;
+    }
 
-.container {
-display: grid;
-align-items: stretch; /* 컨테이너 내 아이템의 높이를 동일하게 늘림 */
-justify-content: space-between; /* 내용을 좌우로 나누어 배치 */
-padding: 10px;
-}
-
-#descriptionText {
-text-align: center;
-padding: 10px 0; /* 텍스트 위아래의 패딩을 추가하여 간격을 조정 */
-font-size: 4vw;
-/* ... */
-}
-
-#Title h2 span {
-font-size: 3vw; /* Ensures uniform font size across spans */
-}
-#Title h4{
-font-size: 2vw; /* Ensures uniform font size across spans */
-}
-#subtitle h1 {
-font-size: 4vw;
-}
-#maincontent h1 {
-font-size: 4vw;
-}
-#maincontent h2 {
-font-size: 3.5vw;
-}
-
-
-
-}
-
+  }
+  
 /* Tablet styles */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
 }
+  

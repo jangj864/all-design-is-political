@@ -1,94 +1,94 @@
 // The artworks data array
 const artworksData = [
     {
-      title: "Communist propaganda poster by Vladimir Mayakovsky",
-      image: "image/Communist propaganda poster by Vladimir Mayakovsky.jpg",
-      year: "1942",
-      artist: "Vladimir Mayakovsky",
+      title: "Battleship Potemkin",
+      image: "image/Battleship Potemkin.jpg",
+      year: "1925",
+      artist: "Sergei Eisenstein",
       country: "Soviet Union",
       ideology: "Communism",
-      description: "A striking poster advocating Communist ideals, using bold imagery and slogans to rally support for the Soviet cause during World War II."
+      description: "A groundbreaking silent film depicting a mutiny aboard a Russian battleship in 1905, serving as a powerful allegory for the Bolshevik Revolution and the struggle against oppression."
     },
     {
-      title: "We Can Do It!",
-      image: "image/We Can Do It!.jpg",
-      year: "1943",
-      artist: "J. Howard Miller",
-      country: "United States",
-      ideology: "Capitalism",
-      description: "An iconic poster encouraging American women to join the workforce during World War II, symbolizing courage and effort, and becoming a symbol of American wartime determination."
-    },
-    {
-      title: "Keep Calm and Carry On",
-      image: "image/Keep Calm and Carry On.jpg",
-      year: "1939",
-      artist: "Unknown",
-      country: "United Kingdom",
-      ideology: "Capitalism",
-      description: "Originally a British poster produced during World War II, it conveyed a message of resilience and determination in the face of adversity, later becoming a global symbol of staying composed during challenging times."
-    },
-    {
-      title: "Uncle Sam Wants You",
-      image: "image/Uncle Sam Wants You.jpg",
-      year: "1917",
-      artist: "James Montgomery Flagg",
-      country: "United States",
-      ideology: "Capitalism",
-      description: "An iconic American recruitment poster from World War I, featuring Uncle Sam pointing directly at the viewer with the caption 'I Want You for U.S. Army,' urging citizens to enlist in the military."
-    },
-    {
-      title: "Rosie the Riveter",
-      image: "image/Rosie the Riveter.jpg",
-      year: "1943",
-      artist: "Norman Rockwell",
-      country: "United States",
-      ideology: "Capitalism",
-      description: "A poster depicting a strong female factory worker, symbolizing the contribution of American women to the war effort during World War II, and representing a shift in gender roles towards more active participation in the workforce."
-    },
-    {
-      title: "Buy War Bonds",
-      image: "image/Buy War Bonds.jpg",
-      year: "1942",
-      artist: "Unknown",
-      country: "United States",
-      ideology: "Capitalism",
-      description: "A poster encouraging Americans to support the war effort by purchasing war bonds, a means of raising funds for military operations during World War II."
-    },
-    {
-      title: "Workers of the World, Unite!",
-      image: "image/Workers of the World, Unite!.jpg",
-      year: "1920s",
-      artist: "Unknown",
-      country: "Soviet Union",
-      ideology: "Communism",
-      description: "A Soviet propaganda poster promoting the unity of workers across the world under the banner of Communism, reflecting the internationalist ideals of the Soviet Union."
-    },
-    {
-      title: "Stalin’s 5-Year Plan",
-      image: "image/Stalin’s 5-Year Plan.png",
-      year: "1930s",
-      artist: "Unknown",
-      country: "Soviet Union",
-      ideology: "Communism",
-      description: "A poster likely promoting one of Stalin's ambitious five-year economic plans aimed at industrializing and modernizing the Soviet Union."
-    },
-    {
-      title: "Proletarians of all Countries, Unite!",
-      image: "image/Proletarians of all Countries, Unite!.jpg",
-      year: "1936",
-      artist: "Unknown",
-      country: "Soviet Union",
-      ideology: "Communism",
-      description: "Another Soviet propaganda poster advocating for the unity of the proletariat worldwide under the banner of Communism, reflecting the internationalist stance of the Soviet government."
-    },
-    {
-      title: "The Motherland Calls",
-      image: "image/The Motherland Calls.jpg",
+      title: "Citizen Kane",
+      image: "image/Citizen Kane.jpg",
       year: "1941",
-      artist: "Irakli Toidze",
+      artist: "Orson Wellesr",
+      country: "United States",
+      ideology: "Capitalism",
+      description: "A landmark American film exploring the rise and fall of a newspaper magnate, touching upon themes of ambition, power, and the corrupting influence of wealth."
+    },
+    {
+      title: "Man with a Movie Camera",
+      image: "image/Man with a Movie Camera.jpg",
+      year: "1929",
+      artist: "Dziga Vertov",
       country: "Soviet Union",
       ideology: "Communism",
-      description: "A monumental Soviet propaganda poster featuring a female figure representing the Motherland calling on her citizens to defend the Soviet Union during World War II, symbolizing patriotism and sacrifice."
+      description: "A pioneering documentary capturing urban life in Soviet cities, celebrating the ideals of industrialization, collective labor, and socialist."
+    },
+    {
+      title: "Modern Times",
+      image: "image/Modern Times.jpg",
+      year: "1936",
+      artist: "Charlie Chaplin",
+      country: "United States",
+      ideology: "Capitalism",
+      description: "A classic silent comedy depicting the struggles of a factory worker during the Great Depression, satirizing the dehumanizing effects of industrialization and mass production."
+    },
+    {
+      title: "Ivan's Childhood.jpg",
+      image: "image/Ivan's Childhood.jpg",
+      year: "1962",
+      artist: "Andrei Tarkovsky",
+      country: "Soviet Union",
+      ideology: "Communism",
+      description: "A poetic war drama following a young orphan boy who becomes a scout for the Soviet army during World War II, reflecting on the loss and trauma of war through a humanistic lens."
+    },
+    {
+      title: "The Graduate",
+      image: "image/The Graduate.jpg",
+      year: "1967",
+      artist: "Mike Nichols",
+      country: "United States",
+      ideology: "Capitalism",
+      description: "A coming-of-age film following a recent college graduate who finds himself entangled in an affair with an older woman, reflecting on themes of alienation, conformity, and the pursuit of success in American society."
+    },
+    {
+      title: "Andrei Rublev",
+      image: "image/Andrei Rublev.jpg",
+      year: "1966",
+      artist: "Andrei Tarkovsky",
+      country: "Soviet Union",
+      ideology: "Communism",
+      description: "A visually stunning historical epic portraying the life of the iconic Russian iconographer Andrei Rublev, exploring themes of artistic freedom, spirituality, and cultural heritage."
+    },
+    {
+      title: "Blade Runner",
+      image: "image/Blade Runner.jpg",
+      year: "1982",
+      artist: "Ridley Scott",
+      country: "United States",
+      ideology: "Capitalism",
+      description: "A dystopian science fiction film exploring themes of identity, technology, and corporate control in a future where artificial beings known as replicants rebel against their human creators."
+    },
+    {
+      title: "The Cranes Are Flying",
+      image: "image/The Cranes Are Flying.jpg",
+      year: "1957",
+      artist: "Mikhail Kalatozov",
+      country: "Soviet Union",
+      ideology: "Communism",
+      description: "A poignant romantic drama set during World War II, depicting the struggles and sacrifices of ordinary Soviet citizens amidst the chaos of war, with themes of patriotism and resilience."
+    },
+    {
+      title: "Wall Street",
+      image: "image/Wall Street.jpg",
+      year: "1987",
+      artist: "Oliver Stone",
+      country: "United States",
+      ideology: "Capitalism",
+      description: "A drama set in the world of high finance, depicting the moral compromises and ethical dilemmas faced by a young stockbroker as he navigates the cutthroat world of Wall Street."
     }
   ];
   
@@ -154,4 +154,21 @@ function navigate(ideology, change) {
 document.addEventListener('DOMContentLoaded', function() {
   renderArtworks('Communism');
   renderArtworks('Capitalism');
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var detailsButtons = document.querySelectorAll('.detailsButton'); // Select all detail buttons
+  detailsButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+          var content = this.closest('.subtitle').querySelector('.detailsContent'); // Find the closest .detailsContent to the button
+          if (content.style.maxHeight) {
+              content.style.maxHeight = null; // Collapse the section
+              content.classList.remove('expanded');
+          } else {
+              content.style.maxHeight = content.scrollHeight + "px"; // Expand the section
+              content.classList.add('expanded');
+          }
+      });
+  });
 });
