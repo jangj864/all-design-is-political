@@ -24,7 +24,7 @@ const artworksData = [
       year: "1931(planned, but was never completed)",
       artist: "Boris Iofan",
       country: "Soviet Union",
-      ideology: "Socialist Realism",
+      ideology: "Communism",
       description: "Planned as the tallest building in the world and intended to house the Soviet legislature, the Palace of the Soviets symbolized the aspirations of communism but was never completed."
     },
     {
@@ -33,7 +33,7 @@ const artworksData = [
       year: "1935",
       artist: "Various",
       country: "Soviet Union",
-      ideology: "Socialist Realism",
+      ideology: "Communism",
       description: "Elaborately designed metro stations known for their ornate decorations, mosaics, and sculptures, serving as showcases of Soviet communism and the achievements of the socialist state."
     },
     {
@@ -42,7 +42,7 @@ const artworksData = [
       year: "1935 (Completed)",
       artist: "Lev Rudnev",
       country: "Soviet Unions",
-      ideology: "Socialist Realism",
+      ideology: "Communism",
       description: "The main building of Moscow State University is a Stalinist skyscraper, symbolizing Soviet academic excellence and ideological strength. Its imposing form features neoclassical elements with ornate decorations and a tall central tower, reflecting the regime's desire for monumental architecture."
     },
     {
