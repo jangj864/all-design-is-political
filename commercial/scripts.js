@@ -1,76 +1,76 @@
 // The artworks data array
 const artworksData = [
     {
-      title: "Vkhutemas",
+      title: "PRODUCT – Raketa Watch",
       image: "image/1.png",
-      year: "1920-1930",
+      year: "1961",
       artist: "Unknown",
       country: "Soviet Union",
       ideology: "Communism",
-      description: "Vkhutemas was a school of design in Moscow, and a center for three major Avant-Garde movements (constructivism, rationalism, & suprematism)."
+      description: "Sturdy and reliable wristwatches produced by the Petrodvorets Watch Factory (formerly known as the Raketa Watch Factory), reflecting Soviet emphasis on practicality and mass production of consumer goods."
     },
     {
-      title: "Russian Avant-Garde",
+      title: "TOY – Matryoshka Doll",
       image: "image/2.jpg",
-      year: "1917-1932",
-      artist: "El Lissitzky (Lazar Lisitsky)",
-      country: "Soviet Union",
-      ideology: "Communism",
-      description: "A work by a famous soviet Avant-Garde artist, the text translating to 'Beat the Whites with the Red Wedge.'"
-    },
-    {
-      title: "Rabotnitsa",
-      image: "image/3.jpg",
-      year: "1914",
+      year: "Late 19th Century",
       artist: "Unknown",
       country: "Soviet Union",
       ideology: "Communism",
-      description: "The cover of the 1923 inaugural issue of Rabotnitsa, the first Soviet women’s magazine found in 1914."
+      description: "Symbolic nesting dolls representing unity and collectivism, often featuring traditional folk designs and portraying themes of family and community."
     },
     {
-      title: "Socialist Realism",
-      image: "image/4.jpg",
-      year: "1934",
-      artist: "Isaak Brodsky",
+      title: "PACKAGING – Soviet Propaganda Book <Selected Works of Lenin>",
+      image: "image/3.jpg",
+      year: "1971",
+      artist: "Vladimir llyich Lenin",
       country: "Soviet Union",
       ideology: "Communism",
-      description: "This artwork represents the Socialist Realism movement of visual arts and literature, that aimed to idealise life under Soviet socialism."
+      description: "Bold and colorful posters promoting socialist values, industrial achievements, and solidarity among workers, serving as packaging for ideological messages."
     },
     {
-      title: "The Museum of Modern Art (MoMA)",
-      image: "image/5.png",
-      year: "1929-",
-      artist: "Photo by Soichi Sunami",
+      title: "ADVERTISING",
+      image: "image/4.png",
+      year: "1930s",
+      artist: "Various",
+      country: "Soviet Union",
+      ideology: "Communism",
+      description: "Propaganda campaign celebrating the achievements of 'Stakhanovite' workers who exceeded production quotas, promoting the ideal of labor excellence and socialist emulation."
+    },
+    {
+      title: "PRODUCT – Ford Model T",
+      image: "image/5.jpg",
+      year: "1908",
+      artist: "Henry ford (designer)",
       country: "United States",
       ideology: "Capitalism",
-      description: "While we typically know the MoMA as a major art museum, mid-20th century the institution played an incredibly important role is establishing our understanding of design today."
+      description: "Revolutionary automobile designed for mass production, symbolizing the advent of consumer culture and transportation accessibility in capitalist America."
     },
     {
-      title: "Pop Art",
-      image: "image/6.jpg",
-      year: "1964",
+      title: "TOY – Teddy Bear",
+      image: "image/6.png",
+      year: "1902",
+      artist: "Morris Michtom",
+      country: "United States",
+      ideology: "Capitalism",
+      description: "Iconic stuffed toy named after President Theodore Roosevelt, reflecting American sentimentality and the commercialization of childhood in the early 20th century."
+    },
+    {
+      title: "PACKAGING – Campbell’s Soup Cans",
+      image: "image/7.jpg",
+      year: "late 19th Century",
       artist: "Andy Warhol",
       country: "United States",
       ideology: "Capitalism",
-      description: "This image of Marilyn Monroe is one of the most iconic pieces to come out of the Pop Art movement, that is arguably the quintessential capitalist art & design style.."
+      description: "Classic tin cans featuring colorful labels, symbolizing the rise of branded products and mass-marketed goods in American households."
     },
     {
-      title: "Mid-Century Modern",
-      image: "image/7.png",
-      year: "1956",
-      artist: "Charles and Ray Eames",
+      title: "ADVERTISING – Coca-Cola 'Holidays Are Coming;",
+      image: "image/8.png",
+      year: "1995",
+      artist: "Unknown",
       country: "United States",
       ideology: "Capitalism",
-      description: "This is the famous Eames Lounge Chair and Ottoman, an iconic representation of the Mid-Century Modern design movement."
-    },
-    {
-      title: "Art Deco",
-      image: "image/8.jpg",
-      year: "1926",
-      artist: "Eduardo Garcia Benito",
-      country: "United States",
-      ideology: "Capitalism",
-      description: "This is a Vogue magazine cover made in the design style of Art Deco- which became synonymous with the opulence and glamour of pre-Great Depression America."
+      description: "Iconic advertising campaign featuring festive imagery and catchy jingle, promoting Coca-Cola as a symbol of holiday joy and togetherness, embodying the spirit of American consumerism and brand loyalty."
     },
 
   ];
