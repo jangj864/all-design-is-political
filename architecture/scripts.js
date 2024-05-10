@@ -1,77 +1,95 @@
 // The artworks data array
 const artworksData = [
     {
-      title: "Vkhutemas",
-      image: "image/1.png",
-      year: "1920-1930",
-      artist: "Unknown",
+      title: "Lenin Mausoleum",
+      image: "image/1.jpg",
+      year: "1930 (completed year)",
+      artist: "Alexei Shchusev",
       country: "Soviet Union",
       ideology: "Communism",
-      description: "Vkhutemas was a school of design in Moscow, and a center for three major Avant-Garde movements (constructivism, rationalism, & suprematism)."
+      description: "Mausoleum housing the embalmed body of Vladimir Lenin in Red Square, Moscow, serving as a symbol of the communist ideology and the founding father of the Soviet Union."
     },
     {
-      title: "Russian Avant-Garde",
+      title: "Stalin's high-rises",
       image: "image/2.jpg",
-      year: "1917-1932",
-      artist: "El Lissitzky (Lazar Lisitsky)",
+      year: "1947 and 1953",
+      artist: "Various architects",
       country: "Soviet Union",
       ideology: "Communism",
-      description: "A work by a famous soviet Avant-Garde artist, the text translating to 'Beat the Whites with the Red Wedge.'"
+      description: "Seven monumental skyscrapers built during the Stalin era in Moscow, symbolizing the power and grandeur of the Soviet state under communism.'"
     },
     {
-      title: "Rabotnitsa",
+      title: "The Palace of Soviets",
       image: "image/3.jpg",
-      year: "1914",
-      artist: "Unknown",
+      year: "1931(planned, but was never completed)",
+      artist: "Boris Iofan",
       country: "Soviet Union",
-      ideology: "Communism",
-      description: "The cover of the 1923 inaugural issue of Rabotnitsa, the first Soviet women’s magazine found in 1914."
+      ideology: "Socialist Realism",
+      description: "Planned as the tallest building in the world and intended to house the Soviet legislature, the Palace of the Soviets symbolized the aspirations of communism but was never completed."
     },
     {
-      title: "Socialist Realism",
+      title: "Moscow Metro Stations",
       image: "image/4.jpg",
-      year: "1934",
-      artist: "Isaak Brodsky",
+      year: "1935",
+      artist: "Various",
       country: "Soviet Union",
-      ideology: "Communism",
-      description: "This artwork represents the Socialist Realism movement of visual arts and literature, that aimed to idealise life under Soviet socialism."
+      ideology: "Socialist Realism",
+      description: "Elaborately designed metro stations known for their ornate decorations, mosaics, and sculptures, serving as showcases of Soviet communism and the achievements of the socialist state."
     },
     {
-      title: "The Museum of Modern Art (MoMA)",
-      image: "image/5.png",
-      year: "1929-",
-      artist: "Photo by Soichi Sunami",
-      country: "United States",
-      ideology: "Capitalism",
-      description: "While we typically know the MoMA as a major art museum, mid-20th century the institution played an incredibly important role is establishing our understanding of design today."
+      title: "Moscow State University Main Building",
+      image: "image/5.jpg",
+      year: "1935 (Completed)",
+      artist: "Lev Rudnev",
+      country: "Soviet Unions",
+      ideology: "Socialist Realism",
+      description: "The main building of Moscow State University is a Stalinist skyscraper, symbolizing Soviet academic excellence and ideological strength. Its imposing form features neoclassical elements with ornate decorations and a tall central tower, reflecting the regime's desire for monumental architecture."
     },
     {
-      title: "Pop Art",
+      title: "Empire State Building",
       image: "image/6.jpg",
-      year: "1964",
-      artist: "Andy Warhol",
+      year: "1931 (completed year)",
+      artist: "Shreve, Lamb & Harmon",
       country: "United States",
       ideology: "Capitalism",
-      description: "This image of Marilyn Monroe is one of the most iconic pieces to come out of the Pop Art movement, that is arguably the quintessential capitalist art & design style.."
+      description: "Iconic skyscraper symbolizing economic power and corporate dominance in the heart of Manhattan."
     },
     {
-      title: "Mid-Century Modern",
-      image: "image/7.png",
-      year: "1956",
-      artist: "Charles and Ray Eames",
-      country: "United States",
-      ideology: "Capitalism",
-      description: "This is the famous Eames Lounge Chair and Ottoman, an iconic representation of the Mid-Century Modern design movement."
+    title: "The Plaza Hotel",
+    image: "image/7.jpg",
+    year: "1907",
+    artist: "Henry Janeway Hardenbergh",
+    country: "United States",
+    ideology: "Capitalism",
+    description: "Historic luxury hotel catering to affluent travelers, showcasing capitalism's investment in hospitality and leisure industries."
     },
     {
-      title: "Art Deco",
+      title: "The Chrysler Building",
       image: "image/8.jpg",
-      year: "1926",
-      artist: "Eduardo Garcia Benito",
+      year: "1930 (year completed)",
+      artist: "William Van Alen",
       country: "United States",
       ideology: "Capitalism",
-      description: "This is a Vogue magazine cover made in the design style of Art Deco- which became synonymous with the opulence and glamour of pre-Great Depression America."
+      description: "Iconic Art Deco skyscraper representing the height of American capitalism and corporate ambition during the early 20th century, adorned with distinctive ornamentation and a stainless steel crown."
     },
+    {
+      title: "Guggenheim Museum",
+      image: "image/9.jpg",
+      year: "1956 (Designed), 1959 (completed)",
+      artist: "Frank Lloyd Wright",
+      country: "United States",
+      ideology: "Capitalism",
+      description: "Iconic modernist museum in New York City, featuring a unique spiral design. Reflects American innovation and individuality, providing a continuous flow for art viewing."
+    },
+    {
+      title: "Fallingwater",
+      image: "image/10.jpg",
+      year: "1939",
+      artist: "Frank Lloyd Wright",
+      country: "United States",
+      ideology: "Capitalism",
+      description: "Cantilevered terraces hover above a waterfall, integrating seamlessly with nature. Reflects Wright's vision of harmony between humans and the environment, embodying American individualism and nature connection."
+    }
 
   ];
   
