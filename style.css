@@ -191,6 +191,7 @@ body, html {
     .fashion { background-color: #94F2E4; }
     .film { background-color: #F9BC45; }
     .organizations { background-color: #F2F294; }
+    .extra { background-color: #ffffff00; }
 
     .architecture:hover { background-color: #493952; }
     .graphic:hover { background-color: #3d5a40; }
@@ -198,6 +199,7 @@ body, html {
     .fashion:hover { background-color: #365b55; }
     .film:hover { background-color: #5f4718; }
     .organizations:hover { background-color: #7b7b4a; }
+    .extra:hover { background-color: #777777; }
     
 /*선*/
 
